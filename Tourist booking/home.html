@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <link rel="stylesheet" href="style.css"/>
+    <meta charset="utf-8">
+    <meta name="viewport"content="width=device-width",initial-scale=1>
+    <title>Home</title>
+    <style>
+        *{
+            font-family: papyrus;
+            font-weight: bold;
+        }
+        body{
+            margin: 0;
+            font-family:Arial, Helvetica, sans-serif;
+            margin-left: 20px;
+            background-image: linear-gradient(to right,plum,lightpink,lightgreen,lightblue,lightyellow);
+
+        }
+        
+        ul {
+            text-align: center;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            overflow: auto;
+           
+          
+           
+        }
+        li{
+            margin-left: 470px;
+        }
+
+        li a{
+            text-align: center;
+         
+            display: block;
+            color: green;
+            padding-left: 16px;
+            text-decoration: none;
+            font-size: larger;
+            float: left;
+            
+        }
+        h1{
+            padding-left:16px;
+            color: black;
+            margin-top: 0.2%;
+        
+        }    
+        li a:hover{
+            color:black;
+        }
+        div.gallery {
+            margin: 5px;
+            border: 1px solid #ccc;
+            float: left;
+            background-color: lightgoldenrodyellow;
+           
+        }
+
+        div.gallery:hover {
+            border: 1px solid blue;
+        }
+        
+        div.gallery img {
+            width:150px;
+            height:100px ;
+        } 
+        div.desc {
+            padding: 15px;
+            text-align: center;
+            text-decoration: none;
+        }
+       
+        .btn{
+            background-color: whitesmoke;
+            border: 1px black solid;
+            font-size: medium;
+        }
+        .btn:hover{
+            background-color: yellow;
+        }
+        
+        
+        div.offer{
+            margin-top: 2px;
+            width:58%;
+            margin-left: 15px;
+        
+        }
+        .offer{
+            margin-top: 2px;
+            width:58%;
+            margin-left: 10px;
+            float: left;
+        }
+        .ad{
+            margin-top: 5px;
+            margin-left:7px ;
+            
+        }
+        table{
+            margin-top: 5px;
+            margin-left: 3px;
+        }
+    
+        .footer{
+            background-color: linen;
+            text-align: center;
+            padding: 10px;
+            margin-right:35px;
+        }
+        #logo{
+            float: right;
+            margin: 0%;
+            padding: 0%;
+        }
+
+    </style>
+    </head>
+    <body>
+        
+        <ul>
+            <h1>Explore <a href="about.html"><img id="logo"src="pic/Picture1.svg" width="100px" height="100px"/></a></h1>
+            <li><a class="active" href="home.html" target="blank">Home</a></li>
+            <li><a href="feautres.html" target="blank">Features</a></li>
+            <li><a href="project gallery.html" target="blank">Gallery</a></li>
+            <li><a href="form.html" target="blank">Bookings</a></li>  
+        </ul>
+        <hr>
+            <div class="gallery"><a href="project gallery.html#image1">
+                <img src="pic/thir.jpg" />
+                <div class="desc">Thirumala</div>
+            </a></div>
+            <div class="gallery"><a href="project gallery.html#image3">
+                <img src="pic/and.jpg" />
+                <div class="desc">Andaman</div></a>
+            </div>
+            <div class="gallery"><a href="project gallery.html#image2">                <img  src="pic/kat.jfif">
+                <div class="desc">Kothagiri<br></div></a>
+            </div>
+            <div class="gallery"><a href="project gallery.html#image4">
+                <img src="pic/ooty.jfif" />
+                <div class="desc">Ooty<br></div></a> 
+            </div>
+            <div class="gallery">
+                <img src="pic/him.jpg" /><a href="project gallery.html#image7">
+                <div class="desc">Himachal</div></a>
+            </div>
+            <div class="gallery">
+                <img  src="pic/pad.jfif" style="width: 180px;"/><a href="project gallery.html#image8">
+                <div class="desc">Thiruvanathapuarm</div></a>
+            </div>
+            <div class="gallery"><a href="project gallery.html#image5">
+                <img  src="pic/sou.jpg" />
+                <div class="desc">Souel<br></div></a>
+            </div>
+            <div class="gallery"><a href="project gallery.html#image6">
+                <img src="pic/tiger.jpg" />
+                <div class="desc">Tiger reserve</div></a>
+            </div>
+
+            <br><br>
+                <div class="offer">
+                    <div class="desc" style="background-color:lightcyan ;"><i>Explore Exclusive</i><br>
+                        Flat <em>20%off </em> on Hotel stay <br>Code: <mark>YUIO</mark>
+                        <br><br><a href="form.html"><button class="btn">Book now</button></a></div>
+                </div>
+                <div class="offer">
+                    <div class="desc" style="background-color: lightcyan;">
+                    <i>Explore Exclusive</i><br>
+                    Up to <em>7%Off</em> On Domestic flights
+                    <br>Code: <mark>YARAIR</mark>
+                    <br><br> <a href="form.html"><button class="btn">Book now</button></a></div>
+                </div>
+                <div class="offer">
+                    <div class="desc" style="background-color: lightcyan;">
+                    <i>July Journey</i><br>
+                    Flat <em>50%off </em> when you book<b>Now</b><br>Code: <mark>JULY</mark>
+                    <br><br><a href="form.html"><button class="btn"onclick="#">Book now</button></a></div>
+                </div>
+
+            <div id="table1">
+                <table border=3px >
+                    <tr>
+                        <th>Source</th>
+                        <th>To</th>
+                        <th>Preference</th>
+                        <th>Price</th>
+                    </tr>
+                    <tr>
+                        <td>Abc Airways</td>
+                        <td>Thirumala</td>
+                        <td>OnHills stay</td>
+                        <td>Rs.15,000</td>
+                    </tr>
+                    <tr>
+                        <td>Export Airways</td>
+                        <td>Andaman</td>
+                        <td>Premium stay</td>
+                        <td>Rs.30,000</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>Sakthi travels</td>
+                        <td>Kothagiri</td>
+                        <td>Premium stay</td>
+                        <td>Rs.20,000</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>Sakthi travels</td>
+                        <td>Ooty</td>
+                        <td> Onhill stay</td>
+                        <td>Rs.20,000</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>Export Airways</td>
+                        <td>Seoul</td>
+                        <td>Premium stay</td>
+                        <td>Rs.75,000</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>Railways</td>
+                        <td>Thiruvananthapuram</td>
+                        <td>Normal suit</td>
+                        <td>Rs.25,000</td>
+                    </tr>
+                    <tr>
+                        <td>Air transport</td>
+                        <td>Himachal</td>
+                        <td>Stay+TourGuidance</td>
+                        <td>Rs.80,000</td>
+                    </tr>
+                    <tr>
+                        <td colspan="4" align="center"><a href="feautres.html"<button>More</button></td>
+                    </tr>
+                </table>
+                <img src="pic/ad2.gif" width="530px" height="198px" style="margin-left:2px; margin-top:2px;">
+            </div>
+
+            <div class="ad">
+                <img src="pic/ad1.jpg" height="150px" width="1310px"/>
+              </div>
+            <br><br>
+              
+            
+
+            <div class="footer">
+                <p><i>Feel free to contact us <br>
+                     Mail us on <b>explore1234@mail.com</b>
+                        <br>Our Head office Address: Explore bulilding 103A, Noertest road,Mumbai.
+                        <br>Contact Number: 8765974563
+                    </i></p>
+                </div>
+              
+
+            </div>
+    </body>
+    <script src="homejs.js"></script>
+    
+</html>
+
+
+      

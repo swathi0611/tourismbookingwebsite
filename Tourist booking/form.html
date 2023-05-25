@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>BookYourTour - Login/Register</title>
+<style>
+body{
+    background-image: linear-gradient(to right,plum,lightpink,lightgreen,lightblue,lightyellow);
+}
+legend
+{
+background-color:black;
+color:yellow;
+text-align:center;
+font-family:papyrus;
+font-size:50px;
+}
+label
+{
+
+color:#4B0082;
+font-family:papyrus;
+font-size:20px;
+}
+.demo
+{
+color:pink;
+background-color:white;
+}
+</style>
+
+<body>
+<legend>Booking Details</legend>
+<br>
+<fieldset>
+<form method="post" id="form" action="book.php">
+<marquee style="background-color:yellow; color:#FF69B4;">Welcome To Explore!!
+Please enter your details for your Trip With Us!!</marquee>
+
+<p style="text-align:center; color:fuchsia; background-color:black; font-size:30px;">Personal Details</p>
+<label for="fname">Full Name</label>
+<br>
+<input type="text" id="fname" name="Full_Name" placeholder="First Name" required>
+<input type="text" id="fname" name="M_Name" placeholder="Middle Name">
+<input type="text" id="fname" name="Last_Name" placeholder="Last Name" required>
+<br>
+<br>
+<label for="pas">Number Of Passengers</label>
+<br>
+<input type="number" id="pas" name="pas" required>
+<br> <br>
+<label for="gen">Gender</label>
+<br>
+<br>
+<input type="radio" id="g1" name="gdr" value="Male">
+<label for="g1">Male</label>
+<br>
+<input type="radio" id="g2" name="gdr" value="Female">
+<label for="g2">Female</label>
+<br>
+<input type="radio" id="g3" name="gdr" value="Transgender">
+<label for="g3">Transgender</label>
+<br>
+<br>
+<label for="add">Communication Addrss</label>
+<br>
+<input type="text"  id="add" name="add" required><br>
+<br>
+<label for="num">Mobile Number</label>
+<br>
+<input type="text" id="num" name="Contact" pattern="[0-9]{10}" required>
+<br>
+<br>
+<label for="em">Email ID</label>
+<br>
+<input type="email" id="em" name="EmailID" required>
+<br>
+<br>
+<label for="pf">Upload ID Proof</label>
+<br>
+<input type="file" id="pf" name="doc" required>
+<br>
+<br>
+<p style="text-align:center; background-color:black; color:white; font-size:30px;">Travel Details</p>
+
+
+<br>
+<br>
+<label for="t1">Departure From</label>
+<input list="fr" id="t1" name="From" required>
+<datalist id="fr">
+<option value="Chennai">
+<option value="Mumbai">
+<option value="Kozhikode">
+<option value="Guwahati">
+<option value="New Delhi">
+<option value="Jaipur">
+</datalist>
+<br>
+<br>
+<label for="t2">Destination</label>
+<input id="t2" list="dest" name="To" required>
+<datalist id="dest">
+<option value="Tirupathi">
+<option value="Kodanad">
+<option value="Andaman and Nicobar Islands">
+<option value="Ooty">
+<option value="Seoul">
+<option value="Tiger Reserves">
+<option value="Himachal Pradesh">
+<option value="Trivandrum">
+</datalist>
+<br>
+<br>
+<!--<label for="t">Select Mode Of Travel</label>
+<br>
+<input list="trav" id="t" name="t" required>
+<datalist id="trav">
+<option value="Train">
+<option value="Car/Bus Service">
+<option value="Plane">
+</datalist>
+<br>
+<br>-->
+<label for="mode">Select Travel Plan</label>
+<br>
+<br>
+<input type="radio" id="mode" name="plan" value="Economic">
+<label for="mode">Economic</label>
+<br>
+<input type="radio" id="mode" name="plan" value="Regular">
+<label for="mode">Regular</label>
+<br>
+<input type="radio" id="mode" name="plan" value="Presidential">
+<label for="mode">Presidential</label>
+<br>
+<br>
+<label for="cpn">Enter Coupon Code</label>
+<input type="text" id= "cpn" name="Offer" placeholder="Enter Coupon/Offer Code">
+<br>
+<br>
+<input type="submit" onclick="pay()" value="Pay"/>
+<p id="payment"></p>
+</form>
+</fieldset>
+
+<script>
+    function pay(){
+        
+        var x=document.getElementById("pas").value;
+        var y=document.getElementById("mode").value;
+     
+
+        if(y==="Economic"){
+            var r=x*25000;
+            alert("Please pay "+r);
+        }
+        else if(y==="Regular")
+        {
+            var r=x*15000;
+            alert("Please pay "+r);
+        }
+        else
+        {
+            var r=x*40000;
+            alert("Please pay "+r);
+        }
+        
+
+        var z=document.getElementById("payment");
+        z.innerHTML="<input type= 'text' placeholder='Enter the card number'/>"+"<br>"+"<br>"+
+        "<input type= 'date' placeholder='Enter the Expiry date'/>"+"<br>"+"<br>"+"<input type= 'text' placeholder='Enter the CVV'/>"+"<br>"+"<br>"+"<input type= 'text' placeholder='Enter the Amount'/>"
+        +"<br>"+"<br>"+"<input type= 'text' placeholder='Enter the Name on the card'/>"+"<br>"+"<br>"+"<button onclick='fix()'>Pay and submit</button>"; 
+
+    }
+    function fix(){
+        document.getElementById("form").submit("book.php");
+    }
+</script>
+
+</body>
+</html>

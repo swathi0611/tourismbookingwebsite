@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css" type="text/css">
+<style>
+#more1,#more2,#more3,#more4,#more5,#more6,#more7,#more8{
+display:none;
+}
+body{
+    background-image: linear-gradient(to right,plum,lightpink,lightgreen,lightblue,lightyellow);
+}
+.center{
+display:block;
+margin-left:auto;
+margin-right:auto;
+width:50%;
+}
+p{
+font-size:20px;}
+</style>
+</head>
+<body onload="myfunc()">
+<h1><center>START EXPLORING THE BEAUTY OF THE WORLD WITH EXPLORE!!!</center><h1>
+<script type="text/javascript">
+var i =0;
+var j=0;
+var k=0;
+var l=0;
+var m=0;
+var n=0;
+var o=0;
+var p=0;
+
+function myfunc(){
+setInterval(changeimage,3000);
+}
+function changeimage(){
+var pics1=["https://i.ytimg.com/vi/LowIiTG3XYY/maxresdefault.jpg","http://templesinindiainfo.com/wp-content/uploads/2016/04/Akasha-Ganga-Theertham_Tirumala-Hills1.jpg","https://i.pinimg.com/originals/79/9d/39/799d39483badfe127900f05688dc0999.png"];
+var pics2 =["https://i.ytimg.com/vi/JL3k1D6Wccg/maxresdefault.jpg","https://www.trahot.in/wp-content/uploads/2020/02/1-01-586-1024x576.jpg","https://www.trahot.in/wp-content/uploads/2020/02/1-01-610-1024x576.jpg","https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/JohnSullivanMemorial%2C_Kotagiri.jpg/300px-JohnSullivanMemorial%2C_Kotagiri.jpg","https://www.trahot.in/wp-content/uploads/2020/02/1-01-590-1024x576.jpg"];
+var pics3 =["https://www.swantour.com/blogs/wp-content/uploads/2019/06/best-season-to-visit.jpg","https://ihplb.b-cdn.net/wp-content/uploads/2017/02/radhanagar-beach-andaman-768x432.jpg",
+"https://hikerwolf.com/wp-content/uploads/2021/05/Guitar-Island.jpg","https://i.ytimg.com/vi/AepsillJr5s/sddefault.jpg","https://www.theindia.co.in/blog/wp-content/uploads/2019/08/jolly-buoy-Andaman-nicobar-island.jpg",
+"https://www.theindia.co.in/blog/wp-content/uploads/2019/08/howrah-bridge-andaman-nicobar-island.jpg","https://www.theindia.co.in/blog/wp-content/uploads/2019/08/elephant-beach-andaman-nicobar-island.jpg",
+"https://www.theindia.co.in/blog/wp-content/uploads/2019/08/limestone-cave-andaman-nicobar-island.jpg"];
+var pics4 =["https://img.traveltriangle.com/blog/wp-content/uploads/2020/01/Ooty-In-Summer-cover_17th-Jan.jpg","https://img.traveltriangle.com/blog/wp-content/tr:w-700,h-400/uploads/2020/01/Ooty-Lake_17th-Jan.jpg",
+"https://img.traveltriangle.com/blog/wp-content/tr:w-700,h-400/uploads/2020/01/Ooty-Rose-Garden_17th-Jan.jpg"];
+var pics5 =["https://cdn.britannica.com/s:690x388,c:crop/57/75757-050-122EC2ED/Changgyong-Palace-background-Seoul.jpg","https://cdn.britannica.com/s:690x388,c:crop/86/188386-050-866EBCA8/Kyongbok-Palace-Seoul.jpg",
+"https://cdn.britannica.com/s:690x388,c:crop/10/94410-050-3ABA7A5B/Namdaemun-Seoul-destruction-2013.jpg"];
+var pics6 =["https://blog.railyatri.in/wp-content/uploads/2017/07/Periyar-768x384.png","https://blog.railyatri.in/wp-content/uploads/2017/07/Periyar-2.png","https://blog.railyatri.in/wp-content/uploads/2017/07/Tadoba.png",
+"https://blog.railyatri.in/wp-content/uploads/2017/07/Dudhwa.png","https://blog.railyatri.in/wp-content/uploads/2017/07/Satpura-2.png"];
+var pics7 =["https://www.holidify.com/images/bgImages/HIMACHAL-PRADESH.jpg","https://www.holidify.com/images/bgImages/ARKI.jpg","https://www.holidify.com/images/bgImages/BHUNTAR.jpg","https://www.holidify.com/images/bgImages/CHAMBA.jpg"];
+var pics8 =["https://www.holidify.com/images/bgImages/TRIVANDRUM.jpg","https://www.holidify.com/images/compressed/1781.jpg?v=1.1","https://www.holidify.com/images/compressed/1788.jpg?v=1.1","https://www.holidify.com/images/compressed/1787.jpg?v=1.1"];
+
+
+document.getElementById("image1").src = pics1[i];
+document.getElementById("image2").src=pics2[j];
+document.getElementById("image3").src= pics3[k];
+document.getElementById("image4").src=pics4[l];
+document.getElementById("image5").src=pics5[m];
+document.getElementById("image6").src=pics6[n];
+document.getElementById("image7").src=pics7[o];
+document.getElementById("image8").src=pics8[p];
+
+
+
+if(i<pics1.length-1){
+i++;
+}
+else{
+i=0;
+}
+if(j<pics2.length-1){
+j++;
+}
+else{
+j=0;
+}
+
+if(k<pics3.length-1){
+k++;
+}
+else{
+k=0;
+}
+if(l<pics4.length-1){
+l++;
+}
+else{
+l=0;
+}
+if(m<pics5.length-1){
+m++;
+}
+else{
+m=0;
+}
+if(n<pics6.length-1){
+n++;
+}
+else{
+n=0;
+}
+if(o<pics7.length-1){
+o++;
+}
+else{
+o=0;
+}
+if(p<pics8.length-1){
+p++;
+}
+else{
+p=0;
+}
+
+}
+function btfunc1(){
+var dots1=document.getElementById("dot1");
+var moretext1 =document.getElementById("more1");
+var buton1 = document.getElementById("mybtn1");
+
+
+if(dots1.style.display === "none"){
+dots1.style.display="inline";
+moretext1.style.display="none";
+buton1.innerHTML ="ReadMore";
+}
+else{
+dots1.style.display = "none";
+moretext1.style.display ="inline";
+buton1.innerHTML ="ReadLess";
+}
+}
+function btfunc2(){
+var dots2=document.getElementById("dot2");
+var moretext2 =document.getElementById("more2");
+var buton2 = document.getElementById("mybtn2");
+
+if(dots2.style.display === "none"){
+dots2.style.display="inline";
+moretext2.style.display="none";
+buton2.innerHTML ="ReadMore";
+}
+else{
+dots2.style.display = "none";
+moretext2.style.display ="inline";
+buton2.innerHTML ="ReadLess";
+}
+}
+function btfunc3(){
+var dots3=document.getElementById("dot3");
+var moretext3 =document.getElementById("more3");
+var buton3= document.getElementById("mybtn3");
+
+
+if(dots3.style.display === "none"){
+dots3.style.display="inline";
+moretext3.style.display="none";
+buton3.innerHTML ="ReadMore";
+}
+else{
+dots3.style.display = "none";
+moretext3.style.display ="inline";
+buton3.innerHTML ="ReadLess";
+}
+
+}
+function btfunc4(){
+var dots4=document.getElementById("dot4");
+var moretext4=document.getElementById("more4");
+var buton4 = document.getElementById("mybtn4");
+
+
+if(dots4.style.display === "none"){
+dots4.style.display="inline";
+moretext4.style.display="none";
+buton4.innerHTML ="ReadMore";
+}
+else{
+dots4.style.display = "none";
+moretext4.style.display ="inline";
+buton4.innerHTML ="ReadLess";
+}
+}
+function btfunc5(){
+var dots5=document.getElementById("dot5");
+var moretext5 =document.getElementById("more5");
+var buton5 = document.getElementById("mybtn5");
+
+
+if(dots5.style.display === "none"){
+dots5.style.display="inline";
+moretext5.style.display="none";
+buton5.innerHTML ="ReadMore";
+}
+else{
+dots5.style.display = "none";
+moretext5.style.display ="inline";
+buton5.innerHTML ="ReadLess";
+}
+}
+function btfunc6(){
+var dots6=document.getElementById("dot6");
+var moretext6=document.getElementById("more6");
+var buton6= document.getElementById("mybtn6");
+
+
+if(dots6.style.display === "none"){
+dots6.style.display="inline";
+moretext6.style.display="none";
+buton6.innerHTML ="ReadMore";
+}
+else{
+dots6.style.display = "none";
+moretext6.style.display ="inline";
+buton6.innerHTML ="ReadLess";
+}
+}
+function btfunc7(){
+var dots7=document.getElementById("dot7");
+var moretext7 =document.getElementById("more7");
+var buton7 = document.getElementById("mybtn7");
+
+
+if(dots7.style.display === "none"){
+dots7.style.display="inline";
+moretext7.style.display="none";
+buton7.innerHTML ="ReadMore";
+}
+else{
+dots7.style.display = "none";
+moretext7.style.display ="inline";
+buton7.innerHTML ="ReadLess";
+}
+}
+function btfunc8(){
+var dots8=document.getElementById("dot8");
+var moretext8=document.getElementById("more8");
+var buton8= document.getElementById("mybtn8");
+
+
+if(dots8.style.display === "none"){
+dots8.style.display="inline";
+moretext8.style.display="none";
+buton8.innerHTML ="ReadMore";
+}
+else{
+dots8.style.display = "none";
+moretext8.style.display ="inline";
+buton8.innerHTML ="ReadLess";
+}
+}
+</script>
+<img height="400" width="600" id="image1" class="center" style="border:10px solid black;">
+<p><i style ="color:purple;">SRI VENKATESHWARA TEMPLE</i><br> is the most revered and celebrated temple of Tirupati having tourists and pilgrims flooding in all year long.
+ This is one of the holiest and the wealthiest temples in the world and millions of devotees flock here to pay their reverence<span id="dot1">...</span><span id="more1">Around 50,000 pilgrims visit the temple every day, which is a massive number. Hence, a whole procedure has been planned and set up which effectively ends at the shrine for darshan.
+The entry for the Darshan is through Vaikuntam Queue Complex which is a series of interconnected halls that leads to the main temple. These halls are clean and comfortable with the various facilities provided.<br>
+<br><i style="color:purple;">AKASHA GANGA THEERTHAM</i><br>One of the most sacred waterfalls in the country the waterfalls of Akasha Ganga are visited by almost all the devotees who come to Tirumala in search of Lord Venkateswara’s blessings. This waterfall also has great religious significance, since its holy water is used for the Lord’s abhishekam. 
+The main deity of Tirumala Temple, Lord Venkateswara, who is an incarnation of Sri Maha Vishnu, receives a sacred bath every day with water.<br><br>
+<i style="color:purple">SWAMI PUSHKARANI LAKE</i><br>Swami Pushkarini Teertham is one of the several holy teerthams in Tirumala, Andhra Pradesh. Located next to on the north eastern side of the Srivari Temple Swami Pushkarini was originally in Vaikuntam and legends say that it was brought to earth by Garuda, for the sport of Lord Venkateswara.
+It is believed that bathing inthe Swami Pushkarini during the Brahmotsavam along with the moment of bathing of Chakrathalawar on the day of chakrasnanam is equivalent to bathing in the holy River Ganges.. It is one of the religiously significant 7 thirthams on Tirumala among the 108 other thirthams found in the forest belt of Tirumala</span></p>
+<button onclick="btfunc1()" id="mybtn1">Read more</button><br><br>
+
+<img height="400" width="600" id="image2" class="center" style="border:10px solid black;">
+<p><i style="color:purple;">KODANAD VIEW POINT</i><br>is a review of the road journey from Ooty to Coimbatore airport via Kotagiri. The view point comes somewhere inbetween - which we did not stop at. The entire journey is very scenic , much more than the Ooty- Connoor journey. The number of hair pin bends are just 7 and the traffic is also less . We did see a Wild Boison .
+ The road signs had "elephants crossing" so if you are lucky you may get to see them<span id="dot2">...</span><span id="more2"><br><br><i style="color:purple">CATHERINE FALLS</i><br>Definitely a scenic place. A rejuvanating place especially in summer where you can enjoy the water with right amount of flow. The flow may increase during monsoons. It requires a one 1km trek to reach the falls from parking. Beware of animal activities in evening hours.
+ We were caught up with wild bisons (Indian gaurs) on the trek path on our way back to parking place.<br><br>
+ <i style="color:purple">LONG WOOD SHOLA</i><br>Originally known as Dodda Shola with an area of 116 hectares, it is the only major pocket of natural Shola Forest left in the immediate vicinity of Kotagiri.
+ This Shola is an integral part of the very fragile Nilgiri Eco-System and preservation of this Forest is vital. It is a major water source for more than 15 villages in the Down Town Aravenu area, the Longwood Shola plays a major role in Kotagiri's microclimate<br><br>
+ <i style="color:purple;">JOHN SULLIVAIN  MEMORIAL</i><br>John Sullivan Memorial located at Kannerimukku, Kotagiri The Nigliris is a must see museum for not only tourists but also people from different walks of life. It gives an overall view of the development of the district be it the people, economics and the landscape. 
+ It is a very good place for students to get insight of the indigenous people and their transition from traditional times to the modern world.<br><br>
+ <i style="color:purple;">ELK FALLS</i><br>With a view of the surrounding as beautiful as the actual fall itself, the Elk Falls which is at a distance of 7 km from Kotagiri is a sure visit for the tourists that come around the area. it can be found while you are on the way to Mettupalayam near the Uyilathi Village. A European house that stands near the waterfall gives the most splendid expression to the British architecture portrayed by it.  A visit during the monsoon season gives out a splendid sight of Kookal Valley in all its glory
+ . These falls gives out the best of the scenery to all of the tourists and visitors.</span></p>
+ <button id="mybtn2" onclick="btfunc2()">Read More</button><br><br>
+ <img height="400" width="600" id = "image3" class="center" style="border:10px solid black;">
+ <p><i style="color:purple;">ANDAMAN AND NICOBAR ISLANDS</i><br>Sparsely-populated beaches that give way to an ocean brimming with interesting marine life and coral gardens are just one of the reasons to visit the beautiful Andaman and Nicobar Islands.
+ Ghandi Park, Sippighat Farm and the century-old Cellular Jail (now a pilgrimage destination) provide glimpses into the past and present of these peaceful islands with a mysterious and multicultural past.<span id="dot3">...</span>
+ <span id="more3">Sparsely-populated beaches that give way to an ocean brimming with interesting marine life and coral gardens are just one of the reasons to visit the beautiful Andaman and Nicobar Islands. Ghandi Park, Sippighat Farm and the century-old Cellular Jail (now a pilgrimage destination) provide glimpses into the past and present of these peaceful islands with a mysterious and multicultural past.</span></p>
+ <button onclick="btfunc3()" id="mybtn3">Read more</button><br><br>
+ <img height="400" width="600" id = "image4" class="center" style="border:10px solid black;">
+ <p><i style="color:purple;">OOTY</i><br>One of the major tourist attractions in this Queen of Hills happens to be the Nilgiri Mountain Railways. A UNESCO World Heritage, a ride on the Nilgiri Mountain Railways is an experience of a lifetime. <span id="dot4">...</span><span id ="more4"> Other points of tourist interest include the Avalanche Lake, Upper Bhavani Lake and the Emerald Lake. Boating at the famous Ooty Lake also qualifies as one of the most exciting things to do in the hill station. Apart from the above-mentioned travel places several religious shrines are also dotted all over - right from St. Stephens Church to the age-old Murugan Temple, even pilgrims can have their fair share in Ooty. Apart from that, travellers can explore a host of other places of interest in the hill station that include the Botanical Gardens, the Pykara Lake and Falls and even sanctuaries. 
+Ooty makes for an ideal destination for honeymooners, solo travellers, family vacationers and also for individuals who simply want to travel with friends. 
+ In our Ooty Travel Guide, we have given an extensive list of what to see in this travel destination in Tamil Nadu, what to do and where to stay - we have covered it all</span></p>
+ <button onclick="btfunc4()" id="mybtn4">Read more</button><br><br>
+ <img height="400" width="600" id = "image5" class="center" style="border:10px solid black;">
+ <p><i style="color:purple">SOUEL</i><br>This new public square lies in front of Gwanghwamun Gate, the main gate to the impressive Gyeongbokgung Palace. The square features a statue of King Sejong the Great, the inventor of Korea’s Hangul alphabet.
+ Visit on a sunny day and you can enjoy the view of the soaring green hills beyond Seoul’s skyscrapers.<span id="dot5">...</span><span id="more5">A short walk to the east of Gwanghwamun is Changdeokgung, the second-largest palace in Seoul. This palace is liked for its “secret garden” of temples and pavilions. Changdeokgung is especially popular in spring, for cherry blossom, and autumn, when the colour of the leaves is dazzling. 
+ Visit early in the day and it will be so peaceful you can imagine what it was like centuries ago.</span></p>
+ <button onclick="btfunc5()" id="mybtn5">Read more</button><br><br>
+ <img height="400" width="600" id = "image6" class="center" style="border:10px solid black;">
+ <p><i style="color:purple;">TIGER RESERVES</i><br>India's wild places face seemingly unstoppable pressures, from poaching, deforestation and overgrazing, as well as the irreversible tide of humanity that brings rapacious development in its wake.<span id="dot6">...</span><span id="more6">
+ A 2010 government survey estimated that only 1,711 tigers remain in its shrinking jungles, just 2% of the population 100 years ago. Yet today, remarkably, 38,000 square kilometres of wilderness is protected, across 500 parks and sanctuaries, harbouring not just tigers, but fantastic flora and fauna.
+
+Over the past decade, India's nature tourism has boomed, growing at up to 25% a year; 90% of this growth is from domestic travellers, who, at last, have the means to visit their own natural heritage. The TOFTigers campaign grew out of my belief that this desire for nature can transform the lives of marginalised communities living in and around today's reserves, and support their tiger populations.</span></p>
+ <button onclick="btfunc6()" id="mybtn6">Read more</button><br><br>
+ <img height="400" width="600" id = "image7" class="center" style="border:10px solid black;">
+ <p><i style="color:purple;">HIMACHAL PRADESH</i><br>Himachal Pradesh is among the most visited top mountain tourist places in North India, Himalayas region.<span id="dot7">...</span><span id="more7"> It gifts you with memories that last for a lifetime. Its landscape has a lot to do with it: valleys, mountains, ancient monasteries, historical sites, lakes, mountain passes! A Himachal Pradesh tour satisfies the wanderlust in you, whatever it is you may be looking for. Pick up any Himachal travel guide, chances are you will be hooked on to it within a few minutes.
+ The state has so much to offer, no wonder it’s a top tourist attraction in North India!</span></p>
+ <button onclick="btfunc7()" id="mybtn7">Read more</button><br><br>
+ <img height="400" width="600" id = "image8" class="center" style="border:10px solid black;">
+ <p><i style="color:purple;">TRIVANDRUM</i><br>Thiruvananthapuram offers a number of places to see and things to do in to its visitors for an unforgettable Kerala holiday experience. Some of the best things to do in and around the city are to relax on Varkala Beach, which is located on the outskirts. One can also visit the nearby Vishnu Temple here, which is believed to be about 2000 years old.<span id="dot8">...</span><span id="more8"> Don't forget to take a dip in the water here, as it is supposed to absolve all the sins. Do visit Kalamachal, a tiny hill station located in the Thiruvananthapuram district. It is a lesser-known destination in Kerala and is perfect for those who want to spend their time away from the crowds. At magic academy learn about the evolution of magic tricks. Indulge in healing Ayurvedic treatments at prominent centres in Thiruvananthapuram. A laid-back wooden boat ride to Kovalam's Main Beach is also an ideal thing to do along with indulging in sports water sports activities like parasailing, paragliding, swimming, surfing, skiing,
+
+catamaran ride, and scuba diving among others at Kovalam Beach. The visitors also have the choice to imbibe the spiritual essence of life by practicing a yoga practice amidst the verdant greenery of the city. Yet another must do includes hopping in a City Day Tour Bus.</span></p> 
+ <button onclick="btfunc8()" id="mybtn8">Read more</button><br><br>
+  
+</body>
+</html>
